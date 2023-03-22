@@ -1,7 +1,7 @@
 # MacOS Keyboard Behavior in Linux
 This [keyd script](./default.conf) seeks to deliver all the **superior** MacOS keyboard behavior you love in Linux!
 
-This project is tested on [Manjaro](https://manjaro.org/), which is based on [Arch](https://archlinux.org/).
+This project is tested in a [Gnome](https://www.gnome.org/) environment, on [Manjaro](https://manjaro.org/), which is based on [Arch](https://archlinux.org/).
 
 ## Prerequisite
 1. Install [keyd](https://github.com/rvaiya/keyd) on your Linux machine
@@ -35,10 +35,10 @@ sudo systemctl enable keyd
 3. Unzip, move the script to the appropriate location, and clean up the mess:
 
 ```
-unzip ~/Downloads/something.zip ~/Downloads/mac-keyboard/
-sudo mv ~/Downloads/default.conf /etc/keyd/default.conf
-rm -Rf ~/Downloads/something.zip
-rm -Rf ~/Downloads/mac-keyboard
+unzip ~/Downloads/mac-keyboard-behavior-in-linux-main.zip -d ~/Downloads
+sudo mv ~/Downloads/mac-keyboard-behavior-in-linux-main/mac.conf /etc/keyd/mac.conf
+rm -Rf ~/Downloads/mac-keyboard-behavior-in-linux-main.zip
+rm -Rf ~/Downloads/mac-keyboard-behavior-in-linux-main
 ```
 
 4. Reload keyd to apply changes:
@@ -47,7 +47,7 @@ rm -Rf ~/Downloads/mac-keyboard
 sudo systemctl restart keyd
 ```
 
-Done!
+**DONE!**
 
 ---
 ## Buy me a coffee (optional) ☕
@@ -94,7 +94,7 @@ This script seeks to implement all shortcuts listed on the official [MacOS keybo
 - [ ] Space bar: Use Quick Look to preview the selected item.
 - [x] Command-Tab: Switch to the next most recently used app among your open apps. 
 - [x] Command–Grave accent (`): Switch between the windows of the app you're using. (The character on the second key varies by keyboard. It's generally the key above the Tab key and to the left of the number 1.)
-- [ ] Shift-Command-5: Take a screenshot or make a screen recording.
+- [x] Shift-Command-5: Take a screenshot or make a screen recording.
 - [x] Shift-Command-N: Create a new folder in the Finder.
 - [/] Command-Comma (,): Open preferences for the front app. (application-specific in Linux)
 
