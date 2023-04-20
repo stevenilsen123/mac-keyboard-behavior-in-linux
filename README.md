@@ -1,4 +1,8 @@
 # MacOS Keyboard Behavior in Linux
+
+![logo.png](logo.png)
+
+<br><br>
 This [keyd script](./default.conf) seeks to deliver all the **superior** MacOS keyboard behavior you love in Linux!
 
 This project is tested in a [Gnome](https://www.gnome.org/) environment, on [Manjaro](https://manjaro.org/), which is based on [Arch](https://archlinux.org/).
