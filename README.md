@@ -33,7 +33,9 @@ sudo systemctl enable keyd
 > As a base starting point, this script will swap your Ctrl and Alt keys in all applications. Keep this in mind if you are wondering why a particular application-specific shortcut you are used to using is not working as expected.
 
 1. [Prerequisites](#prerequisites) first!
-2. Download this repo as a zip file to your Downloads folder
+2. In your desktop environment, change your app switching keyboard shortcut from `Super+Tab` to `Ctrl+Tab`
+   * In Gnome, this is located in: **Settings -> Keyboard -> Keyboard Shortcuts -> View and Customize Shortcuts -> Navigation -> Switch applications**
+3. Download this repo as a zip file to your Downloads folder
 
 ![GitHub Download](assets/github-download.png)
 
