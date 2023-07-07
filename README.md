@@ -13,17 +13,18 @@ This project is tested in a [Gnome](https://www.gnome.org/) environment, on [Man
     * If you are running some other Linux distro:
         1. Check into your local mental health ward
         2. Follow the [installation instuctions](https://github.com/rvaiya/keyd#installation) on GitHub
-2. Start keyd:
+2. Enable keyd:
 
 ```
 sudo systemctl enable keyd
 ```
+3. Reboot
 
 > ### **NOTE**
 > The below reccomended keyboard shortcut assignments use Ctrl instead of Alt becaust the keyd script you are about to install will swap your Ctrl and Alt keys
 
-3. Optional (but highly recommended): Install [Albert](https://albertlauncher.github.io/) and assign it to Ctrl+Space
-4. Optional (but highly recommended): Install [Emote](https://github.com/tom-james-watson/Emote) and assign it to Ctrl+Super+Space
+4. Optional (but highly recommended): Install [Albert](https://albertlauncher.github.io/) and assign it to Ctrl+Space
+5. Optional (but highly recommended): Install [Emote](https://github.com/tom-james-watson/Emote) and assign it to Ctrl+Super+Space
 
 ---
 
