@@ -1,6 +1,6 @@
 # MacOS Keyboard Behavior in Linux
 
-![logo.png](logo.png)
+![logo](assets/logo.png)
 
 <br><br>
 This [keyd script](./default.conf) seeks to deliver all the **superior** MacOS keyboard behavior you love in Linux!
@@ -35,7 +35,7 @@ sudo systemctl enable keyd
 1. [Prerequisites](#prerequisites) first!
 2. Download this repo as a zip file to your Downloads folder
 
-![GitHub_Download](GitHub_Download.png)
+![GitHub Download](assets/github-download.png)
 
 3. Unzip, move the script to the appropriate location, and clean up the mess:
 
@@ -56,7 +56,7 @@ sudo systemctl restart keyd
 
 ---
 ## Buy me a coffee (optional) ☕
-[<img src="qr_Ko-fiDonate.png" alt="Donate" width="200"/>](https://ko-fi.com/stephennilsen)
+[<img src="assets/ko-fi-qr.png" alt="Donate" width="200"/>](https://ko-fi.com/stephennilsen)
 
 ## https://ko-fi.com/stephennilsen
 
