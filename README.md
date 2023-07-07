@@ -7,7 +7,7 @@ This [keyd script](./default.conf) seeks to deliver all the **superior** MacOS k
 
 This project is tested in a [Gnome](https://www.gnome.org/) environment, on [Manjaro](https://manjaro.org/), which is based on [Arch](https://archlinux.org/).
 
-## Prerequisite
+## Prerequisites
 1. Install [keyd](https://github.com/rvaiya/keyd) on your Linux machine
     * Get it from [the AUR](https://aur.archlinux.org/) if you are runing Arch or an Arch-based distro such as Manjaro. Speaking of Manjaro, check out [How to Enable Arch User Repository (AUR) in Manjaro Linux](https://www.linuxshelltips.com/enable-arch-user-repository-manjaro-linux/) if you haven't already done so.
     * If you are running some other Linux distro:
@@ -33,13 +33,14 @@ sudo systemctl enable keyd
 > As a base starting point, this script will swap your Ctrl and Alt keys in all applications. Keep this in mind if you are wondering why a particular application-specific shortcut you are used to using is not working as expected.
 
 1. [Prerequisites](#prerequisites) first!
-2. In your desktop environment, change your app switching keyboard shortcut from `Super+Tab` to `Ctrl+Tab`
-   * In Gnome, this is located in: **Settings -> Keyboard -> Keyboard Shortcuts -> View and Customize Shortcuts -> Navigation -> Switch applications**
+2. Modify the following keyboard shortcuts in your desktop environment. In Gnome, these are located in: **Settings -> Keyboard -> Keyboard Shortcuts -> View and Customize Shortcuts -> Navigation**
+   * "Switch applications" set to "Ctrl+Tab"
+   * "Switch windows of an application" set to "Ctrl+`" (that's the key above the Tab key)
 3. Download this repo as a zip file to your Downloads folder
 
 ![GitHub Download](assets/github-download.png)
 
-3. Unzip, move the script to the appropriate location, and clean up the mess:
+4. Unzip, move the script to the appropriate location, and clean up the mess:
 
 ```
 unzip ~/Downloads/mac-keyboard-behavior-in-linux-main.zip -d ~/Downloads
@@ -48,7 +49,7 @@ rm -Rf ~/Downloads/mac-keyboard-behavior-in-linux-main.zip
 rm -Rf ~/Downloads/mac-keyboard-behavior-in-linux-main
 ```
 
-4. Reload keyd to apply changes:
+5. Reload keyd to apply changes:
 
 ```
 sudo systemctl restart keyd
