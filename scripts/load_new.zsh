@@ -8,17 +8,16 @@ read -s -p "Password for sudo: " password
 echo ""
 
 # remove old backup
-echo "$password" | sudo touch ~/mac.conf.bak
 echo "$password" | sudo rm -f /etc/keyd/mac.conf.bak
 
 # backup current file
 echo "$password" | sudo mv /etc/keyd/mac.conf /etc/keyd/mac.conf.bak
 
 # Clean trailing whitespace characters from the new file with vim (keyd doesn't like them)
-echo -e ":wq\n" | vim -c 'silent! %s/\s\+$//e' ./mac.conf
+echo -e ":wq\n" | vim -c 'silent! %s/\s\+$//e' ../mac.conf
 
 # copy over new file
-echo "$password" | sudo cp ./mac.conf /etc/keyd/mac.conf
+echo "$password" | sudo cp ../mac.conf /etc/keyd/mac.conf
 
 # reload
 echo "$password" | sudo systemctl restart keyd
